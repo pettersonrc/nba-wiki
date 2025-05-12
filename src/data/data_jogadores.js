@@ -1,3 +1,34 @@
+import jordan from "/public/michael-jordan.jpg";
+import lebron from "/public/lebron-james.jpg";
+import iverson from "/public/allen-iverson.jpg";
+import bill from "/public/bill-russell.jpg";
+import bird from "/public/bird.jpg";
+import barkley from "/public/charles-barkley.jpg";
+import paul from "/public/chris-paul.jpg";
+import curry from "/public/curry.jpg";
+import robinson from "/public/david-robinson.jpg";
+import dirk from "/public/dirk.jpg";
+import doncic from "/public/doncic.jpg";
+import duncan from "/public/duncan.jpg";
+import durant from "/public/durant.jpg";
+import garnett from "/public/garnett.jpg";
+import giannis from "/public/giannis.jpg";
+import hakeem from "/public/hakeem.jpg";
+import harden from "/public/harden.jpg";
+import isaiah from "/public/isaiah-thomas.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+import lebron from "/public/michael-jordan.jpg";
+
 const jogadores = [
     {
         nome: "Michael Jordan",
