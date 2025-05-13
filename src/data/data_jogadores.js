@@ -16,18 +16,18 @@ import giannis from "/public/giannis.jpg";
 import hakeem from "/public/hakeem.jpg";
 import harden from "/public/harden.jpg";
 import isaiah from "/public/isaiah-thomas.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
-import lebron from "/public/michael-jordan.jpg";
+import kidd from "/public/jason-kidd.jpg";
+import jokic from "/public/jokic.jpg";
+import kareem from "/public/kareem.jpg";
+import kobe from "/public/kobe.jpg";
+import magic from "/public/magic.jpg";
+import malone from "/public/malone.jpg";
+import robertson from "/public/oscar-robertson.jpg";
+import pippen from "/public/pippen.jpg";
+import shaq from "/public/shaq.jpg";
+import nash from "/public/steve-nash.jpg";
+import wade from "/public/wade.jpg";
+import wilt from "/public/wilt.jpg";
 
 const jogadores = [
     {
@@ -52,6 +52,7 @@ const jogadores = [
         },
         descricao:
             "Considerado por muitos o maior jogador de todos os tempos. Dominou as finais da NBA com os Bulls e teve enorme impacto cultural.",
+        imagem: jordan,
     },
     {
         nome: "Lebron James",
@@ -73,6 +74,7 @@ const jogadores = [
         },
         descricao:
             "Atleta mais completo da história da NBA, com enorme longevidade e impacto dentro e fora das quadras.",
+        imagem: lebron,
     },
     {
         nome: "Kareem Abdul-Jabbar",
@@ -92,6 +94,7 @@ const jogadores = [
         },
         descricao:
             "Dominante por duas décadas, dono do indefensável gancho do céu e lenda dos Lakers.",
+        imagem: kareem,
     },
     {
         nome: "Magic Johnson",
@@ -111,6 +114,7 @@ const jogadores = [
         },
         descricao:
             "Revolucionou a posição de armador com altura, visão e estilo no Showtime Lakers.",
+        imagem: ,
     },
     {
         nome: "Larry Bird",
@@ -130,6 +134,7 @@ const jogadores = [
         },
         descricao:
             "Ícone dos Celtics, conhecido por sua inteligência, arremesso mortal e rivalidade com Magic.",
+        imagem: ,
     },
     {
         nome: "Bill Russell",
@@ -148,6 +153,7 @@ const jogadores = [
         },
         descricao:
             "Maior campeão da história da NBA e símbolo de defesa, liderança e integridade.",
+        imagem: ,
     },
     {
         nome: "Wilt Chamberlain",
@@ -167,6 +173,7 @@ const jogadores = [
         },
         descricao:
             "Gigante físico e estatístico, dono de recordes quase inalcançáveis.",
+        imagem: ,
     },
     {
         nome: "Kobe Bryant",
@@ -187,6 +194,7 @@ const jogadores = [
         },
         descricao:
             "Ícone dos Lakers, exemplo de ética de trabalho e mentalidade vencedora com a 'Mamba Mentality'.",
+        imagem: ,
     },
     {
         nome: "Tim Duncan",
@@ -206,6 +214,7 @@ const jogadores = [
         },
         descricao:
             "Líder silencioso dos Spurs, conhecido por consistência, humildade e eficiência.",
+        imagem: ,
     },
     {
         nome: "Shaquille O'Neal",
@@ -225,6 +234,7 @@ const jogadores = [
         },
         descricao:
             "Pivô dominante fisicamente, estrela dentro e fora das quadras.",
+        imagem: ,
     },
     {
         nome: "Stephen Curry",
@@ -245,6 +255,7 @@ const jogadores = [
         },
         descricao:
             "Mudou o jogo com seu arremesso de longa distância, transformando os Warriors em uma dinastia.",
+        imagem: ,
     },
     {
         nome: "Hakeem Olajuwon",
@@ -265,6 +276,7 @@ const jogadores = [
         },
         descricao:
             "Técnica refinada e defesa elite, dominou os anos 90 com os Rockets.",
+        imagem: ,
     },
     {
         nome: "Kevin Durant",
@@ -285,6 +297,7 @@ const jogadores = [
         },
         descricao:
             "Pontuador letal e versátil, dominou diferentes eras em várias franquias.",
+        imagem: ,
     },
     {
         nome: "Oscar Robertson",
@@ -296,6 +309,7 @@ const jogadores = [
             "1× MVP da temporada",
             "12× All-Star",
             "Primeiro jogador a ter média de triplo-duplo em uma temporada",
+        imagem: ,
         ],
         estatisticas: {
             pontos_por_jogo: 25.7,
@@ -304,6 +318,7 @@ const jogadores = [
         },
         descricao:
             "Pioneiro no jogo completo, armador dominante em todas as áreas.",
+        imagem: ,
     },
     {
         nome: "Dirk Nowitzki",
@@ -322,6 +337,7 @@ const jogadores = [
         },
         descricao:
             "Revolucionou o jogo para os europeus, com arremesso preciso e lealdade aos Mavericks.",
+        imagem: ,
     },
     {
         nome: "Karl Malone",
@@ -340,6 +356,7 @@ const jogadores = [
         },
         descricao:
             "Segundo maior pontuador da história por anos, símbolo de durabilidade e força física.",
+        imagem: ,
     },
     {
         nome: "Giannis Antetokounmpo",
@@ -360,6 +377,7 @@ const jogadores = [
         },
         descricao:
             "Força atlética e versatilidade definem o 'Greek Freak', já entre os grandes da NBA moderna.",
+        imagem: ,
     },
     {
         nome: "Charles Barkley",
@@ -378,6 +396,7 @@ const jogadores = [
         },
         descricao:
             "Um dos maiores jogadores sem título, Barkley foi dominante em rebotes e personalidade marcante.",
+        imagem: ,
     },
     {
         nome: "Kevin Garnett",
@@ -397,6 +416,7 @@ const jogadores = [
         },
         descricao:
             "Intensidade defensiva e liderança foram marcas do ícone dos Timberwolves e Celtics.",
+        imagem: ,
     },
     {
         nome: "Dwayne Wade",
@@ -416,6 +436,7 @@ const jogadores = [
         },
         descricao:
             "Ídolo do Miami Heat, conhecido por sua explosão atlética, defesa e habilidade decisiva.",
+        imagem: ,
     },
     {
         nome: "David Robinson",
@@ -436,6 +457,7 @@ const jogadores = [
         },
         descricao:
             "O 'Almirante' combinava talento atlético e caráter, liderando os Spurs na transição para a era Duncan.",
+        imagem: ,
     },
     {
         nome: "Chris Paul",
@@ -455,6 +477,7 @@ const jogadores = [
         },
         descricao:
             "Um dos armadores mais inteligentes e eficientes da história, ainda busca seu primeiro título.",
+        imagem: ,
     },
     {
         nome: "Isaiah Thomas",
@@ -469,6 +492,7 @@ const jogadores = [
         },
         descricao:
             "Líder dos 'Bad Boys' Pistons, conhecido por sua dureza, habilidade e coração competitivo.",
+        imagem: ,
     },
     {
         nome: "Scottie Pippen",
@@ -488,6 +512,7 @@ const jogadores = [
         },
         descricao:
             "Parceiro de Jordan nos Bulls, defensor completo e versátil, essencial para o sucesso da equipe.",
+        imagem: ,
     },
     {
         nome: "Allen Iverson",
@@ -506,6 +531,7 @@ const jogadores = [
         },
         descricao:
             "Um dos jogadores mais influentes e talentosos da era moderna, conhecido por sua garra e estilo único.",
+        imagem: ,
     },
     {
         nome: "Jason Kidd",
@@ -525,6 +551,7 @@ const jogadores = [
         },
         descricao:
             "Um dos maiores armadores da história, conhecido por visão de jogo, defesa e liderança.",
+        imagem: ,
     },
     {
         nome: "Steve Nash",
@@ -543,6 +570,7 @@ const jogadores = [
         },
         descricao:
             "Maestro do ataque, famoso pela inteligência, eficiência e comando ofensivo com os Suns.",
+        imagem: ,
     },
     {
         nome: "James Harden",
@@ -562,6 +590,7 @@ const jogadores = [
         },
         descricao:
             "Ofensivamente prolífico, redefiniu o jogo com seu step-back e controle de ritmo.",
+        imagem: ,
     },
     {
         nome: "Nikola Jokić",
@@ -581,6 +610,7 @@ const jogadores = [
         },
         descricao:
             "Pivô com visão de jogo única, redefiniu o papel da posição com sua inteligência e versatilidade.",
+        imagem: ,
     },
     {
         nome: "Luka Dončić",
@@ -599,6 +629,7 @@ const jogadores = [
         },
         descricao:
             "Fenômeno esloveno, já entre os principais jogadores da liga com grande potencial histórico.",
+        imagem: ,
     },
 ];
 
