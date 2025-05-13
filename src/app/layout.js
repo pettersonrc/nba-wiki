@@ -1,4 +1,5 @@
 import "./globals.css";
+import Topo from "@/components/Topo";
 
 export const metadata = {
     title: "NBAwiki",
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-br">
-            <body>{children}</body>
+            <body>
+                <Topo />
+                {children}
+            </body>
         </html>
     );
 }

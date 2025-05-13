@@ -1,5 +1,5 @@
 import jordan from "/public/michael-jordan.jpg";
-import lebron from "/public/lebron-james.jpg";
+import lebron from "../../public/lebron.jpg";
 import iverson from "/public/allen-iverson.jpg";
 import bill from "/public/bill-russell.jpg";
 import bird from "/public/bird.jpg";
@@ -23,14 +23,15 @@ import kobe from "/public/kobe.jpg";
 import magic from "/public/magic.jpg";
 import malone from "/public/malone.jpg";
 import robertson from "/public/oscar-robertson.jpg";
-import pippen from "/public/pippen.jpg";
-import shaq from "/public/shaq.jpg";
+import pippen from "/public/pippen.jpeg";
+import shaq from "/public/shaq.jpeg";
 import nash from "/public/steve-nash.jpg";
 import wade from "/public/wade.jpg";
 import wilt from "/public/wilt.jpg";
 
-const jogadores = [
+export const jogadores = [
     {
+        top10: true,
         nome: "Michael Jordan",
         nome_completo: "Michael Jeffrey Jordan",
         posicao: "Shooting Guard",
@@ -48,13 +49,13 @@ const jogadores = [
             pontos_por_jogo: 30.1,
             rebotes: 6.2,
             assistencias: 5.3,
-            roubos_de_bola: 2.3,
         },
         descricao:
             "Considerado por muitos o maior jogador de todos os tempos. Dominou as finais da NBA com os Bulls e teve enorme impacto cultural.",
         imagem: jordan,
     },
     {
+        top10: true,
         nome: "Lebron James",
         nome_completo: "LeBron Raymone James",
         posicao: "Small Forward",
@@ -77,6 +78,7 @@ const jogadores = [
         imagem: lebron,
     },
     {
+        top10: true,
         nome: "Kareem Abdul-Jabbar",
         nome_completo: "Ferdinand Lewis Alcindor Jr.",
         posicao: "Center",
@@ -90,13 +92,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 24.6,
             rebotes: 11.2,
-            tocos: 2.6,
+            assistencias: 3.6,
         },
         descricao:
             "Dominante por duas décadas, dono do indefensável gancho do céu e lenda dos Lakers.",
         imagem: kareem,
     },
     {
+        top10: true,
         nome: "Magic Johnson",
         nome_completo: "Earvin Johnson Jr.",
         posicao: "Point Guard",
@@ -114,9 +117,10 @@ const jogadores = [
         },
         descricao:
             "Revolucionou a posição de armador com altura, visão e estilo no Showtime Lakers.",
-        imagem: ,
+        imagem: magic,
     },
     {
+        top10: true,
         nome: "Larry Bird",
         nome_completo: "Larry Joe Bird",
         posicao: "Small Forward",
@@ -134,9 +138,10 @@ const jogadores = [
         },
         descricao:
             "Ícone dos Celtics, conhecido por sua inteligência, arremesso mortal e rivalidade com Magic.",
-        imagem: ,
+        imagem: bird,
     },
     {
+        top10: false,
         nome: "Bill Russell",
         nome_completo: "William Felton Russell",
         posicao: "Center",
@@ -153,9 +158,10 @@ const jogadores = [
         },
         descricao:
             "Maior campeão da história da NBA e símbolo de defesa, liderança e integridade.",
-        imagem: ,
+        imagem: bill,
     },
     {
+        top10: true,
         nome: "Wilt Chamberlain",
         nome_completo: "Wilton Norman Chamberlain",
         posicao: "Center",
@@ -173,9 +179,10 @@ const jogadores = [
         },
         descricao:
             "Gigante físico e estatístico, dono de recordes quase inalcançáveis.",
-        imagem: ,
+        imagem: wilt,
     },
     {
+        top10: true,
         nome: "Kobe Bryant",
         nome_completo: "Kobe Bean Bryant",
         posicao: "Shooting Guard",
@@ -194,9 +201,10 @@ const jogadores = [
         },
         descricao:
             "Ícone dos Lakers, exemplo de ética de trabalho e mentalidade vencedora com a 'Mamba Mentality'.",
-        imagem: ,
+        imagem: kobe,
     },
     {
+        top10: true,
         nome: "Tim Duncan",
         nome_completo: "Timothy Theodore Duncan",
         posicao: "Power Forward",
@@ -210,13 +218,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 19.0,
             rebotes: 10.8,
-            tocos: 2.2,
+            assistencias: 3.0,
         },
         descricao:
             "Líder silencioso dos Spurs, conhecido por consistência, humildade e eficiência.",
-        imagem: ,
+        imagem: duncan,
     },
     {
+        top10: true,
         nome: "Shaquille O'Neal",
         nome_completo: "Shaquille Rashaun O’Neal",
         posicao: "Center",
@@ -230,13 +239,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 23.7,
             rebotes: 10.9,
-            tocos: 2.3,
+            assistencias: 2.5,
         },
         descricao:
             "Pivô dominante fisicamente, estrela dentro e fora das quadras.",
-        imagem: ,
+        imagem: shaq,
     },
     {
+        top10: true,
         nome: "Stephen Curry",
         nome_completo: "Wardell Stephen Curry II",
         posicao: "Point Guard",
@@ -255,9 +265,10 @@ const jogadores = [
         },
         descricao:
             "Mudou o jogo com seu arremesso de longa distância, transformando os Warriors em uma dinastia.",
-        imagem: ,
+        imagem: curry,
     },
     {
+        top10: false,
         nome: "Hakeem Olajuwon",
         nome_completo: "Hakeem Abdul Olajuwon",
         posicao: "Center",
@@ -272,13 +283,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 21.8,
             rebotes: 11.1,
-            tocos: 3.1,
+            assistencias: 2.5,
         },
         descricao:
             "Técnica refinada e defesa elite, dominou os anos 90 com os Rockets.",
-        imagem: ,
+        imagem: hakeem,
     },
     {
+        top10: false,
         nome: "Kevin Durant",
         nome_completo: "Kevin Wayne Durant",
         posicao: "Small Forward",
@@ -297,9 +309,10 @@ const jogadores = [
         },
         descricao:
             "Pontuador letal e versátil, dominou diferentes eras em várias franquias.",
-        imagem: ,
+        imagem: durant,
     },
     {
+        top10: false,
         nome: "Oscar Robertson",
         nome_completo: "Oscar Palmer Robertson",
         posicao: "Point Guard",
@@ -309,7 +322,6 @@ const jogadores = [
             "1× MVP da temporada",
             "12× All-Star",
             "Primeiro jogador a ter média de triplo-duplo em uma temporada",
-        imagem: ,
         ],
         estatisticas: {
             pontos_por_jogo: 25.7,
@@ -318,9 +330,10 @@ const jogadores = [
         },
         descricao:
             "Pioneiro no jogo completo, armador dominante em todas as áreas.",
-        imagem: ,
+        imagem: robertson,
     },
     {
+        top10: false,
         nome: "Dirk Nowitzki",
         nome_completo: "Dirk Werner Nowitzki",
         posicao: "Power Forward",
@@ -337,9 +350,10 @@ const jogadores = [
         },
         descricao:
             "Revolucionou o jogo para os europeus, com arremesso preciso e lealdade aos Mavericks.",
-        imagem: ,
+        imagem: dirk,
     },
     {
+        top10: false,
         nome: "Karl Malone",
         nome_completo: "Karl Anthony Malone",
         posicao: "Power Forward",
@@ -356,9 +370,10 @@ const jogadores = [
         },
         descricao:
             "Segundo maior pontuador da história por anos, símbolo de durabilidade e força física.",
-        imagem: ,
+        imagem: malone,
     },
     {
+        top10: false,
         nome: "Giannis Antetokounmpo",
         nome_completo: "Giannis Sina Ugo Antetokounmpo",
         posicao: "Power Forward",
@@ -377,9 +392,10 @@ const jogadores = [
         },
         descricao:
             "Força atlética e versatilidade definem o 'Greek Freak', já entre os grandes da NBA moderna.",
-        imagem: ,
+        imagem: giannis,
     },
     {
+        top10: false,
         nome: "Charles Barkley",
         nome_completo: "Charles Wade Barkley",
         posicao: "Power Forward",
@@ -396,9 +412,10 @@ const jogadores = [
         },
         descricao:
             "Um dos maiores jogadores sem título, Barkley foi dominante em rebotes e personalidade marcante.",
-        imagem: ,
+        imagem: barkley,
     },
     {
+        top10: false,
         nome: "Kevin Garnett",
         nome_completo: "Kevin Maurice Garnett",
         posicao: "Power Forward",
@@ -416,9 +433,10 @@ const jogadores = [
         },
         descricao:
             "Intensidade defensiva e liderança foram marcas do ícone dos Timberwolves e Celtics.",
-        imagem: ,
+        imagem: garnett,
     },
     {
+        top10: false,
         nome: "Dwayne Wade",
         nome_completo: "Dwyane Tyrone Wade Jr.",
         posicao: "Shooting Guard",
@@ -436,9 +454,10 @@ const jogadores = [
         },
         descricao:
             "Ídolo do Miami Heat, conhecido por sua explosão atlética, defesa e habilidade decisiva.",
-        imagem: ,
+        imagem: wade,
     },
     {
+        top10: false,
         nome: "David Robinson",
         nome_completo: "David Maurice Robinson",
         posicao: "Center",
@@ -453,13 +472,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 21.1,
             rebotes: 10.6,
-            tocos: 3.0,
+            assistencias: 2.5,
         },
         descricao:
             "O 'Almirante' combinava talento atlético e caráter, liderando os Spurs na transição para a era Duncan.",
-        imagem: ,
+        imagem: robinson,
     },
     {
+        top10: false,
         nome: "Chris Paul",
         nome_completo: "Christopher Emmanuel Paul",
         posicao: "Point Guard",
@@ -473,13 +493,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 17.9,
             assistencias: 9.5,
-            roubos_de_bola: 2.1,
+            rebotes: 4.5,
         },
         descricao:
             "Um dos armadores mais inteligentes e eficientes da história, ainda busca seu primeiro título.",
-        imagem: ,
+        imagem: paul,
     },
     {
+        top10: false,
         nome: "Isaiah Thomas",
         nome_completo: "Isiah Lord Thomas III",
         posicao: "Point Guard",
@@ -492,9 +513,10 @@ const jogadores = [
         },
         descricao:
             "Líder dos 'Bad Boys' Pistons, conhecido por sua dureza, habilidade e coração competitivo.",
-        imagem: ,
+        imagem: isaiah,
     },
     {
+        top10: false,
         nome: "Scottie Pippen",
         nome_completo: "Scottie Maurice Pippen",
         posicao: "Small Forward",
@@ -512,9 +534,10 @@ const jogadores = [
         },
         descricao:
             "Parceiro de Jordan nos Bulls, defensor completo e versátil, essencial para o sucesso da equipe.",
-        imagem: ,
+        imagem: pippen,
     },
     {
+        top10: false,
         nome: "Allen Iverson",
         nome_completo: "Allen Ezail Iverson",
         posicao: "Point Guard",
@@ -527,13 +550,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 26.7,
             assistencias: 6.2,
-            roubos_de_bola: 2.2,
+            rebotes: 3.7,
         },
         descricao:
             "Um dos jogadores mais influentes e talentosos da era moderna, conhecido por sua garra e estilo único.",
-        imagem: ,
+        imagem: iverson,
     },
     {
+        top10: false,
         nome: "Jason Kidd",
         nome_completo: "Jason Frederick Kidd",
         posicao: "Point Guard",
@@ -551,9 +575,10 @@ const jogadores = [
         },
         descricao:
             "Um dos maiores armadores da história, conhecido por visão de jogo, defesa e liderança.",
-        imagem: ,
+        imagem: kidd,
     },
     {
+        top10: false,
         nome: "Steve Nash",
         nome_completo: "Stephen John Nash",
         posicao: "Point Guard",
@@ -566,13 +591,14 @@ const jogadores = [
         estatisticas: {
             pontos_por_jogo: 14.3,
             assistencias: 8.5,
-            aproveitamento_arremessos: "49% FG / 43% 3PT / 90% FT",
+            rebotes: 3.0,
         },
         descricao:
             "Maestro do ataque, famoso pela inteligência, eficiência e comando ofensivo com os Suns.",
-        imagem: ,
+        imagem: nash,
     },
     {
+        top10: false,
         nome: "James Harden",
         nome_completo: "James Edward Harden Jr.",
         posicao: "Point Guard",
@@ -590,9 +616,10 @@ const jogadores = [
         },
         descricao:
             "Ofensivamente prolífico, redefiniu o jogo com seu step-back e controle de ritmo.",
-        imagem: ,
+        imagem: harden,
     },
     {
+        top10: false,
         nome: "Nikola Jokić",
         nome_completo: "Nikola Jokić",
         posicao: "Center",
@@ -610,9 +637,10 @@ const jogadores = [
         },
         descricao:
             "Pivô com visão de jogo única, redefiniu o papel da posição com sua inteligência e versatilidade.",
-        imagem: ,
+        imagem: jokic,
     },
     {
+        top10: false,
         nome: "Luka Dončić",
         nome_completo: "Luka Dončić",
         posicao: "Point Guard",
@@ -629,7 +657,7 @@ const jogadores = [
         },
         descricao:
             "Fenômeno esloveno, já entre os principais jogadores da liga com grande potencial histórico.",
-        imagem: ,
+        imagem: doncic,
     },
 ];
 

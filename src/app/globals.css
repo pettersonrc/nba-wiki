@@ -1,1 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "basketball";
+}
 
+@font-face {
+    font-family: "basketball";
+    src: url("../../public/fonts/Basketball.otf") format("opentype");
+}

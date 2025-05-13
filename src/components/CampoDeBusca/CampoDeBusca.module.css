@@ -1,0 +1,22 @@
+.container_campo_busca {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img_lupa {
+    width: 30px;
+    height: 30px;
+}
+
+.campo_de_busca {
+    width: 100%;
+    font-family: 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
