@@ -100,6 +100,26 @@ export const jogadores = [
     },
     {
         top10: true,
+        nome: "Bill Russell",
+        nome_completo: "William Felton Russell",
+        posicao: "Center",
+        anos_ativos: "1956–1969",
+        conquistas: [
+            "11× Campeão da NBA",
+            "5× MVP da temporada",
+            "12× All-Star",
+        ],
+        estatisticas: {
+            pontos_por_jogo: 15.1,
+            rebotes: 22.5,
+            assistencias: 4.3,
+        },
+        descricao:
+            "Maior campeão da história da NBA e símbolo de defesa, liderança e integridade.",
+        imagem: bill,
+    },
+    {
+        top10: true,
         nome: "Magic Johnson",
         nome_completo: "Earvin Johnson Jr.",
         posicao: "Point Guard",
@@ -118,6 +138,27 @@ export const jogadores = [
         descricao:
             "Revolucionou a posição de armador com altura, visão e estilo no Showtime Lakers.",
         imagem: magic,
+    },
+    {
+        top10: true,
+        nome: "Wilt Chamberlain",
+        nome_completo: "Wilton Norman Chamberlain",
+        posicao: "Center",
+        anos_ativos: "1959–1973",
+        conquistas: [
+            "2× Campeão da NBA",
+            "4× MVP da temporada",
+            "13× All-Star",
+            "Recorde de 100 pontos em um jogo",
+        ],
+        estatisticas: {
+            pontos_por_jogo: 30.1,
+            rebotes: 22.9,
+            assistencias: 4.4,
+        },
+        descricao:
+            "Gigante físico e estatístico, dono de recordes quase inalcançáveis.",
+        imagem: wilt,
     },
     {
         top10: true,
@@ -141,45 +182,25 @@ export const jogadores = [
         imagem: bird,
     },
     {
-        top10: false,
-        nome: "Bill Russell",
-        nome_completo: "William Felton Russell",
-        posicao: "Center",
-        anos_ativos: "1956–1969",
-        conquistas: [
-            "11× Campeão da NBA",
-            "5× MVP da temporada",
-            "12× All-Star",
-        ],
-        estatisticas: {
-            pontos_por_jogo: 15.1,
-            rebotes: 22.5,
-            assistencias: 4.3,
-        },
-        descricao:
-            "Maior campeão da história da NBA e símbolo de defesa, liderança e integridade.",
-        imagem: bill,
-    },
-    {
         top10: true,
-        nome: "Wilt Chamberlain",
-        nome_completo: "Wilton Norman Chamberlain",
-        posicao: "Center",
-        anos_ativos: "1959–1973",
+        nome: "Tim Duncan",
+        nome_completo: "Timothy Theodore Duncan",
+        posicao: "Power Forward",
+        anos_ativos: "1997–2016",
         conquistas: [
-            "2× Campeão da NBA",
-            "4× MVP da temporada",
-            "13× All-Star",
-            "Recorde de 100 pontos em um jogo",
+            "5× Campeão da NBA",
+            "2× MVP da temporada",
+            "3× MVP das finais",
+            "15× All-Star",
         ],
         estatisticas: {
-            pontos_por_jogo: 30.1,
-            rebotes: 22.9,
-            assistencias: 4.4,
+            pontos_por_jogo: 19.0,
+            rebotes: 10.8,
+            assistencias: 3.0,
         },
         descricao:
-            "Gigante físico e estatístico, dono de recordes quase inalcançáveis.",
-        imagem: wilt,
+            "Líder silencioso dos Spurs, conhecido por consistência, humildade e eficiência.",
+        imagem: duncan,
     },
     {
         top10: true,
@@ -205,27 +226,6 @@ export const jogadores = [
     },
     {
         top10: true,
-        nome: "Tim Duncan",
-        nome_completo: "Timothy Theodore Duncan",
-        posicao: "Power Forward",
-        anos_ativos: "1997–2016",
-        conquistas: [
-            "5× Campeão da NBA",
-            "2× MVP da temporada",
-            "3× MVP das finais",
-            "15× All-Star",
-        ],
-        estatisticas: {
-            pontos_por_jogo: 19.0,
-            rebotes: 10.8,
-            assistencias: 3.0,
-        },
-        descricao:
-            "Líder silencioso dos Spurs, conhecido por consistência, humildade e eficiência.",
-        imagem: duncan,
-    },
-    {
-        top10: true,
         nome: "Shaquille O'Neal",
         nome_completo: "Shaquille Rashaun O’Neal",
         posicao: "Center",
@@ -246,7 +246,7 @@ export const jogadores = [
         imagem: shaq,
     },
     {
-        top10: true,
+        top10: false,
         nome: "Stephen Curry",
         nome_completo: "Wardell Stephen Curry II",
         posicao: "Point Guard",
