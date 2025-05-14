@@ -8,15 +8,15 @@ import { useState } from "react";
 import {
     filtrarJogador,
     buscarJogador,
-    armadores,
     todosJogadores,
+    alterarTema,
 } from "@/services/servicos";
-import { jogadores } from "../services/servicos";
 
 export default function Home() {
     const [dadosFiltrados, setDadosFiltrados] = useState(todosJogadores);
     const [textoBuscaDigitado, setTextoBuscaDigitado] = useState("");
     const [botaoClicado, setBotaoClicado] = useState("Todos");
+    const [ehTemaEscuro, setTemaEscuro] = useState(false);
 
     const handleBusca = (textoDigitado) => {
         setTextoBuscaDigitado(textoDigitado);

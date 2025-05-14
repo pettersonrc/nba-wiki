@@ -19,3 +19,7 @@ export const getTodosJogadores = () => {
 };
 
 export const todosJogadores = getTodosJogadores();
+
+export const alterarTema = (setTemaEscuro, ehTemaEscuro) => {
+    setTemaEscuro(!ehTemaEscuro);
+};

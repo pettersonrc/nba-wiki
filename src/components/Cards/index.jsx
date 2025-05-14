@@ -24,9 +24,9 @@ export default function Card(props) {
                     ))}
                 </div>
                 <ul>
-                    <li>PPG: {props.estatisticas.pontos_por_jogo}</li>
-                    <li>Rebotes: {props.estatisticas.rebotes}</li>
-                    <li>Assistências: {props.estatisticas.assistencias}</li>
+                    <li>PPG: {props.estatisticas.pontos_por_jogo.toFixed(1)}</li>
+                    <li>Rebotes: {props.estatisticas.rebotes.toFixed(1)}</li>
+                    <li>Assistências: {props.estatisticas.assistencias.toFixed(1)}</li>
                 </ul>
                 <p>{props.descricao}</p>
             </div>
