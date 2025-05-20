@@ -28,6 +28,10 @@
 .botao:hover {
     background-color: rgb(161, 161, 161);
     color: black;
+
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 .acender_botao {

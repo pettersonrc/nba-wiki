@@ -1,6 +1,7 @@
 import Rodape from "@/components/Rodape";
 import "./globals.css";
 import Topo from "@/components/Topo";
+import "animate.css";
 
 export const metadata = {
     title: "NBAwiki",
